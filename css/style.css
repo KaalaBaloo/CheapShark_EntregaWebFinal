@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkblue;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: cyan;
+    text-align: center;
+}
+
+#c2a {
+    text-align: center;
+    background-color: cyan;
+}
+
+footer {
+    background-color: cyan;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer a:hover {
+    color: red;
+    text-decoration: underline;
+}
