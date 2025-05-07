@@ -32,6 +32,7 @@ $(document).ready(function() {
         let gameCard = `
             <div class="card">
                 <div class="card-body">
+                    <img src="${game.thumb}">
                     <h5 class="card-title">${game.external}</h5>
                     <p class="card-text">Cheapest Price: <strong>$${game.cheapest}</strong></p>
                     <a href="${gameLink}" target="_blank">View Deal</a>
@@ -39,6 +40,40 @@ $(document).ready(function() {
             </div>
         `;
         $('#search-results').append(gameCard);
+    }
+
+    // Get under 15 deals
+    fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=15")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(deals) {
+        if (deals.length > 0) {
+            deals.forEach(function(deal) {
+                displayDeal(deal);
+            });
+          }
+     })
+     .catch(function(error) {
+         console.log(error);
+    });
+
+    // Display deal
+    function displayDeal(deal) {
+        let dealLink = `https://www.cheapshark.com/redirect?dealID=${deal.dealID}`;
+
+        let dealCard = `
+            <div class="card">
+                <div class="card-body">
+                    <img src="${deal.thumb}">
+                    <h5 class="card-title">${deal.title}</h5>
+                    <p class="card-text">Price: <strong>$${deal.salePrice}</strong> <del>$${deal.normalPrice}</del></p>
+                    <a href="${dealLink}" target="_blank">View Deal</a>
+                </div>
+            </div>
+        `;
+
+        $('#deals-list').append(dealCard);
     }
 
 });
