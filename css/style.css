@@ -35,6 +35,12 @@ footer {
   height: 100%;
 }
 
+#c2a a img:hover {
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
+  transform: scale(1.05);
+}
+
 .logo img {
   vertical-align: middle;
 }
@@ -85,6 +91,10 @@ main .row {
 
 .col-md-4 {
   flex: 0 0 calc(33.333% - 1rem);
+}
+
+#MainPageHeader {
+  background-image: url(../media/img/HeaderMadera.png);
 }
 
 @media (max-width: 768px) {
