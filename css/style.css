@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-body {
+.body-index-sum {
   background-image: url(/media/img/FondoClaro.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header-index {
@@ -46,7 +46,7 @@ footer {
 }
 
 .logo span {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 2rem;
   vertical-align: middle;
 }
@@ -69,7 +69,7 @@ footer {
   color: black;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #deals-list .card img {
@@ -97,7 +97,7 @@ main .row {
   background-image: url(../media/img/HeaderMadera.png);
 }
 .logo-img {
-   height: 300px;
+  height: 300px;
   transition: height 0.3s ease;
 }
 
