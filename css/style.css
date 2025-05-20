@@ -112,6 +112,11 @@ main .row {
   z-index: 10;
 }
 
+body.dark-mode {
+  background-image: url(/media/img/FondoOscuro.png);
+
+}
+
 @media (max-width: 768px) {
   .col-md-4 {
     flex: 0 0 100%;
