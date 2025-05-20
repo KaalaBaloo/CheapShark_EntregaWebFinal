@@ -5,20 +5,18 @@
   box-sizing: border-box;
 }
 
-body {
+.body-deal {
   background-image: url(/media/img/FondoClaro.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 100px; /* para que el header no tape el contenido */
-  display: flex;
-  flex-direction: row;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 100px;
 }
 
 /* Header fijo arriba */
-header#MainPageHeader {
+.header-deals {
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +24,7 @@ header#MainPageHeader {
   height: 100px;
   background-image: url(../media/img/HeaderMadera.png);
   background-size: cover;
+  background-position: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -68,7 +67,7 @@ footer {
   color: black;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #deals-list .card img {
