@@ -101,6 +101,17 @@ main .row {
   transition: height 0.3s ease;
 }
 
+.BotonModoClaro {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
 @media (max-width: 768px) {
   .col-md-4 {
     flex: 0 0 100%;
