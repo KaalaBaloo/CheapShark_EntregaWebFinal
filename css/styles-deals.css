@@ -109,6 +109,41 @@ main .row {
   height: 80px;
 }
 
+.BotonModoClaro {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+body.dark-mode {
+  background-image: url(/media/img/FondoOscuro.png);
+}
+
+body.dark-mode .header-deals {
+  background-image: url("../media/img/HeaderMaderaOscuro.png");
+}
+
+body.dark-mode .btn {
+  background-color: #333;
+  border-color: #444;
+}
+
+body.dark-mode .form-control, body.dark-mode .form-select {
+  background-color: #222;
+  color: #fff;
+}
+
+body.dark-mode .aside-deals {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+
 @media (max-width: 768px) {
   aside {
     position: relative;

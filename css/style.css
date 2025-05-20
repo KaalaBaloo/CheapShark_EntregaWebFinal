@@ -114,7 +114,6 @@ main .row {
 
 body.dark-mode {
   background-image: url(/media/img/FondoOscuro.png);
-
 }
 
 @media (max-width: 768px) {

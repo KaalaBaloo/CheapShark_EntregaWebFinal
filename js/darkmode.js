@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         : "../media/img/CheapSharkTituloC.png";
 
       toggleBtn.src = darkMode
-        ? "media/img/ToggleOscuro.png"
-        : "media/img/ToggleClaro.png";
+        ? "../media/img/ToggleOscuro.png"
+        : "../media/img/ToggleClaro.png";
 
       botonCTA.src = darkMode
         ? "../media/img/BotonOscuro.png"
