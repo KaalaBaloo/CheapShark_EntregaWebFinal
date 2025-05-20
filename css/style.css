@@ -96,9 +96,22 @@ main .row {
 #MainPageHeader {
   background-image: url(../media/img/HeaderMadera.png);
 }
+.logo-img {
+   height: 300px;
+  transition: height 0.3s ease;
+}
 
 @media (max-width: 768px) {
   .col-md-4 {
     flex: 0 0 100%;
+  }
+  .logo-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 150px;
   }
 }
