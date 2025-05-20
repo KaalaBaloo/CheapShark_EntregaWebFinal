@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/media/img/FondoClaro.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 100px; /* para que el header no tape el contenido */
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header fijo arriba */
+header#MainPageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-image: url(../media/img/HeaderMadera.png);
+  background-size: cover;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+/* Aside fijo al lado izquierdo */
+.aside-deals {
+  position: fixed;
+  top: 100px; /* debajo del header */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 100px);
+  background-color: #6c757d; /* igual al bg-secondary */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Main con margen izquierdo para dejar espacio al aside */
+main {
+  margin-left: 250px;
+  padding: 2rem;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+/* Footer */
+footer {
+  background-color: cyan;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Estilos de las tarjetas */
+#deals-list .card {
+  height: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#deals-list .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+#deals-list .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+main .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col-md-4 {
+  flex: 0 0 calc(33.333% - 1rem);
+}
+
+/* Otros elementos */
+#price-value {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  font-family: monospace;
+}
+
+#store-select {
+  height: 100px;
+  overflow-y: scroll;
+}
+
+/* Logo y buscador */
+.logo img {
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%;
+  }
+}
