@@ -112,6 +112,15 @@ main .row {
   z-index: 10;
 }
 
+.darkmode {
+  background-image: url(/media/img/FondoOscuro.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Open Sans', sans-serif;
+}
+
 @media (max-width: 768px) {
   .col-md-4 {
     flex: 0 0 100%;
