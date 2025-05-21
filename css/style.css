@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rokkitt", serif;  
 }
 
 .header-index {
@@ -18,7 +18,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  
 }
 
 footer {
@@ -33,12 +33,14 @@ footer {
   position: relative;
   justify-content: center;
   height: 100%;
+  
 }
 
 #c2a a img:hover {
   filter: brightness(80%);
   transition: filter 0.3s ease;
-  transform: scale(1.05);
+  transform: scale(1.15);
+  transition: all 0.3s ease;
 }
 
 .logo img {
