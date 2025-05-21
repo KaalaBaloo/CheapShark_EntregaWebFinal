@@ -1,26 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("modo-toggle");
-    const logoImg = document.querySelector(".logo-img");
-    const fondo = document.body;
-    const botonCTA = document.querySelector("#c2a img");
+  const toggleBtn = document.getElementById("modo-toggle");
+  const logoImg = document.querySelector(".logo-img");
+  const fondo = document.body;
+  const botonCTA = document.querySelector("#c2a img");
 
-    let darkMode = false;
+  const isInHtmlFolder = location.pathname.includes("/html/");
+  const imgPrefix = isInHtmlFolder ? "../media/img/" : "media/img/";
 
-    toggleBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      darkMode = !darkMode;
-      fondo.classList.toggle("dark-mode");
+  let darkMode = false;
 
-      logoImg.src = darkMode
-        ? "../media/img/CheapSharkTituloO.png"
-        : "../media/img/CheapSharkTituloC.png";
+  toggleBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    darkMode = !darkMode;
+    fondo.classList.toggle("dark-mode");
 
-      toggleBtn.src = darkMode
-        ? "../media/img/ToggleOscuro.png"
-        : "../media/img/ToggleClaro.png";
+    logoImg.src = imgPrefix + (darkMode
+      ? "CheapSharkTituloO.png"
+      : "CheapSharkTituloC.png");
 
-      botonCTA.src = darkMode
-        ? "../media/img/BotonOscuro.png"
-        : "../media/img/BotonClaro.png";
-    });
+    toggleBtn.src = imgPrefix + (darkMode
+      ? "ToggleOscuro.png"
+      : "ToggleClaro.png");
+
+    botonCTA.src = imgPrefix + (darkMode
+      ? "BotonOscuro.png"
+      : "BotonClaro.png");
   });
+});

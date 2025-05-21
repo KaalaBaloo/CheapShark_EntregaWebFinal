@@ -139,7 +139,7 @@ body.dark-mode .btn {
   border-color: #444;
 }
 
-body.dark-mode .form-control, body.dark-mode .form-select {
+body.dark-mode .form-control, body.dark-mode .form-select, body.dark-mode .form-range {
   background-color: #222;
   color: #fff;
 }
