@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100%; 
+  overflow: hidden;  
+}
+
 .body-index-sum {
   background-image: url(/media/img/FondoClaro.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Rokkitt", serif;  
+  font-family: "Rokkitt", serif;
 }
 
 .header-index {
@@ -96,7 +101,7 @@ main .row {
 }
 
 #MainPageHeader {
-  background-image: url(../media/img/HeaderMadera.png);
+  background-image: url(/media/img/HeaderMadera.png);
 }
 .logo-img {
   height: 300px;
