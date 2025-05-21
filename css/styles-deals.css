@@ -6,7 +6,7 @@
 }
 
 .body-deal {
-  background-image: url(/../media/img/FondoClaro.png);
+  background-image: url(../media/img/FondoClaro.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@
   left: 0;
   right: 0;
   height: 100px;
-  background-image: url(/../media/img/HeaderMadera.png);
+  background-image: url(../media/img/HeaderMadera.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
   left: 0;
   width: 250px;
   height: calc(100vh - 100px);
-  background-image: url(/../media/img/BannerClaro.png);
+  background-image: url(../media/img/BannerClaro.png);
   background-color: #bacffb; /* igual al bg-secondary */
   padding: 1rem;
   overflow-y: auto;
@@ -127,11 +127,11 @@ main .row {
 }
 
 body.dark-mode {
-  background-image: url(/../media/img/FondoOscuro.png);
+  background-image: url(../media/img/FondoOscuro.png);
 }
 
 body.dark-mode .header-deals {
-  background-image: url("/../media/img/HeaderMaderaOscuro.png");
+  background-image: url("../media/img/HeaderMaderaOscuro.png");
 }
 
 body.dark-mode .btn {

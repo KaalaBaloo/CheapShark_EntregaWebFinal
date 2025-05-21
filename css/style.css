@@ -10,7 +10,7 @@ body {
 }
 
 .body-index-sum {
-  background-image: url(/media/img/FondoClaro.png);
+  background-image: url(../media/img/FondoClaro.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +101,7 @@ main .row {
 }
 
 #MainPageHeader {
-  background-image: url(/media/img/HeaderMadera.png);
+  background-image: url(../media/img/HeaderMadera.png);
 }
 .logo-img {
   height: 300px;
@@ -120,7 +120,7 @@ main .row {
 }
 
 body.dark-mode {
-  background-image: url(/media/img/FondoOscuro.png);
+  background-image: url(../media/img/FondoOscuro.png);
 }
 
 @media (max-width: 768px) {
